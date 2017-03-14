@@ -1,0 +1,40 @@
+
+#### LOG IN AND CD TO CORRECT DIRECTORY
+raunaks-mbp:~ RaunakBhojwani$ ssh -l bhojwani flume.cs.dartmouth.edu
+Last login: Mon Apr 25 21:31:50 2016 from 10.31.197.169
+
+[flume:~] 101) cd cs50/labs/lab3/list
+
+#### MAKE AND RUN LISTTEST
+
+[flume:list] 102) make
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o listtest.o listtest.c
+gcc -Wall -pedantic -std=c11 -ggdb listtest.o list.o  -o listtest
+
+[flume:list] 103) ./listtest
+true
+true
+false
+true
+true
+false
+true
+true
+false
+true
+true
+true
+false
+The data for Raunak is 100.
+The data for George is 0.
+The data for Mahnoor is rocknroll.
+The data for Shaun is 69.
+The data for Karishma is 19.
+The data for Karishma is (nil).
+The data for Jahnvi is 25.
+The data for Surender is king.
+The data for Rick is 1.
+The data for Lakshman is supercook.
+The bag has been successfully deleted!
+
+[flume:list] 104) 

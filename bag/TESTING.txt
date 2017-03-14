@@ -1,0 +1,36 @@
+### Log in and cd to the correct directory
+
+raunaks-mbp:~ RaunakBhojwani$ ssh -l bhojwani flume.cs.dartmouth.edu
+Last login: Mon Apr 25 21:19:49 2016 from 10.31.197.169
+
+[flume:~] 101) cd cs50/labs/lab3/bag
+
+[flume:bag] 102) ls
+bag.c  bag.h  bagtest.c  Makefile
+
+##### make files and then run baggiest to test bag
+
+[flume:bag] 103) make
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o bagtest.o bagtest.c
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o bag.o bag.c
+gcc -Wall -pedantic -std=c11 -ggdb bagtest.o bag.o  -o bagtest
+
+[flume:bag] 104) ./bagtest
+zombie
+robot
+eve
+VR
+7
+clara
+htc
+3
+raunak
+george
+(nil)
+(nil)
+(nil)
+(nil)
+(nil)
+The bag has been successfully deleted!
+
+[flume:bag] 105) 

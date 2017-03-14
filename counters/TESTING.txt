@@ -1,0 +1,54 @@
+
+#### LOG IN AND CD TO CORRECT DIRECTORY
+
+raunaks-mbp:~ RaunakBhojwani$ ssh -l bhojwani flume.cs.dartmouth.edu
+Last login: Mon Apr 25 21:30:07 2016 from 10.31.197.169
+
+[flume:~] 101) cd cs50/labs/lab3/counters
+
+#### MAKE AND RUN COUNTERSTEST
+
+[flume:counters] 102) make
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o counterstest.o counterstest.c
+gcc -Wall -pedantic -std=c11 -ggdb   -c -o counters.o counters.c
+gcc -Wall -pedantic -std=c11 -ggdb counterstest.o counters.o  -o counterstest
+
+[flume:counters] 103) ./counterstest
+The count for George is 1.
+The count for Raunak is 0.
+The count for HTC is 0.
+The count for George is 1.
+The count for Raunak is 1.
+The count for HTC is 0.
+The count for George is 2.
+The count for Raunak is 1.
+The count for HTC is 0.
+The count for George is 2.
+The count for Raunak is 1.
+The count for HTC is 1.
+The count for George is 3.
+The count for Raunak is 1.
+The count for HTC is 1.
+The count for George is 3.
+The count for Raunak is 2.
+The count for HTC is 1.
+The count for NULL is 0.
+The count for George is 4.
+The count for Raunak is 2.
+The count for HTC is 1.
+The count for George is 4.
+The count for Raunak is 3.
+The count for HTC is 1.
+The count for NULL is 0.
+The count for George is 5.
+The count for Raunak is 3.
+The count for HTC is 1.
+The count for George is 5.
+The count for Raunak is 3.
+The count for HTC is 1.
+The count for George is 5.
+The count for Raunak is 3.
+The count for HTC is 1.
+The count for Eve is 1.
+The counters data structure has been deleted. Thank you for testing. Good bye!
+[flume:counters] 104) 
